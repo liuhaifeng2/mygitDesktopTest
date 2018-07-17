@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
     QApplication app(argc, argv);
 
     QWidget *window = new QWidget;
-    window->setWindowTitle("Entery your age:");
+    window->setWindowTitle("请输入你的年龄:");
 
     QSpinBox *spinBox = new QSpinBox;
     QSlider *slider = new QSlider(Qt::Horizontal);
@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
     layout->addWidget(slider);
     window->setLayout(layout);
 
-    window->resize(400, 300);
+    window->resize(640, 480);
     window->show();
 
     return app.exec();
